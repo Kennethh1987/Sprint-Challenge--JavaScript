@@ -29,14 +29,34 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your team lead
 
 1. Describe the biggest difference between `.forEach` & `.map`.
+`.forEach`: Does not return a new array, Must iterate through EVERY item in the array without stopping. Not good for big task due to memory use.
+`.map`: Returns a new array, needs a return keyword, does not manipulate the original array
 
 2. What is the difference between a function and a method?
 
-3. What is closure?
+A function is a piece of code that is called by name. It can be passed data to operate on (i.e. the parameters) and can optionally return data (the return value). All data that is passed to a function is explicitly passed. A method is a piece of code that is called by a name that is associated with an object.
+A method is implicitly passed the object on which it was called.
+A method is able to operate on data that is contained within the class (remembering that an object is an instance of a class - the class is the definition, the object is an instance of that data).
 
-4. Describe the four rules of the 'this' keyword.
+3. What is closure?:
+ A hair weave addon.
+closures give us the ability to put functions together
+ it's code that's been identified elsewhere that we can use for later
+  belong === lexical scope
 
-5. Why do we need super() in an extended class?
+4. Describe the four rules of the 'this' keyword.:
+
+Is the function called by new?
+Is the function called by call(), apply(), or bind()?
+Is the function called as a method, ie: obj.func()?
+Is the function called in the global scope?
+
+If strict mode is enabled, return undefined.
+Otherwise, return the global object, ie: window.
+
+5. Why do we need super() in an extended class?:
+
+The super keyword refers to the parent class. It is used to call the constructor of the parent class and to access the parent's properties and methods
 
 ## Project Set up
 
